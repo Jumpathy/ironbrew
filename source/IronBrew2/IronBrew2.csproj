@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+<PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <OutputType>Exe</OutputType>
+</PropertyGroup>
+
+<ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="4.6.0-preview.18571.3" />
+</ItemGroup>
+
+<ItemGroup>
+    <Folder Include="Bytecode Library" />
+</ItemGroup>
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<PublishSingleFile>true</PublishSingleFile>
+		<RuntimeIdentifier>win-x64</RuntimeIdentifier>
+		<!-- or other RID like win-x86, linux-x64, osx-x64 -->
+		<SelfContained>true</SelfContained>
+		<EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+	</PropertyGroup>
+	
+</Project>
